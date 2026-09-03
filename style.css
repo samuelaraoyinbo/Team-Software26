@@ -110,12 +110,12 @@ a {
   pointer-events: none;
 }
 
-.watermark-text {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 92px;
-  font-weight: 700;
-  fill: #ffffff;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+.watermark-img {
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  filter: drop-shadow(0 4px 18px rgba(0, 0, 0, 0.35));
 }
 
 .image-panel__caption {
@@ -170,16 +170,11 @@ a {
   margin-bottom: 28px;
 }
 
-.brand-badge {
-  flex-shrink: 0;
-  border-radius: var(--radius-full);
-}
-
-.badge-text {
-  font-size: 15px;
-  font-weight: 700;
-  fill: var(--color-green);
-  text-anchor: middle;
+.badge-img {
+  width: 52px;
+  height: 54px;
+  background: #ffffff;
+  display: block;
 }
 
 .brand-divider {
@@ -196,17 +191,24 @@ a {
 }
 
 .brand-line {
-  font-weight: 700;
-  font-size: 22px;
-  letter-spacing: 0.04em;
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--color-navy);
+  color: rgba(30, 30, 30, 0.7);
+}
+.brand-l {
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(30, 30, 30, 0.7);
 }
 
 .brand-tagline {
-  font-size: 12px;
-  font-style: italic;
-  color: var(--color-gray-secondary);
+  font-size: 13px;
+  font-style: inherit;
+  color: rgba(30, 30, 30, 0.7);
   margin-top: 2px;
 }
 
@@ -312,12 +314,16 @@ a {
 }
 
 .warning-row {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 6px;
   font-size: 13px;
   color: var(--color-warning);
   margin-top: 8px;
+}
+
+.warning-row.warning-row--visible {
+  display: flex;
 }
 
 /* =========================================================
@@ -471,13 +477,9 @@ a {
     flex: none;
   }
 
-  .image-panel__watermark svg {
+  .watermark-img {
     width: 100px;
-    height: 100px;
-  }
-
-  .watermark-text {
-    font-size: 48px;
+    height: auto;
   }
 
   .image-panel__caption {

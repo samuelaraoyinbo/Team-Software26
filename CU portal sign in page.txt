@@ -1,0 +1,967 @@
+/* Desktop - 8 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #F8FAFC;
+
+
+/* Frame 30 */
+
+position: absolute;
+width: 326px;
+height: 98px;
+left: 918px;
+top: 140px;
+
+
+
+/* Group 16 */
+
+position: absolute;
+width: 326px;
+height: 98px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 25 */
+
+position: absolute;
+width: 93px;
+height: 98px;
+left: 0px;
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 27 */
+
+position: absolute;
+width: 215px;
+height: 85px;
+left: 111px;
+top: 7px;
+
+
+
+/* Group 15 */
+
+position: absolute;
+width: 215px;
+height: 85px;
+left: 0px;
+top: 0px;
+
+
+
+/* Frame 26 */
+
+position: absolute;
+width: 197px;
+height: 85px;
+left: 18px;
+top: 0px;
+
+
+
+/* Group 14 */
+
+position: absolute;
+width: 197px;
+height: 85px;
+left: 0px;
+top: 0px;
+
+
+
+/* COVENANT
+UNIVERSITY */
+
+position: absolute;
+width: 197px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 39px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+
+color: rgba(29, 29, 29, 0.7);
+
+
+
+/* Africa’s No. 1 Private University */
+
+position: absolute;
+width: 193px;
+height: 15px;
+left: 0px;
+top: 70px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+
+color: rgba(29, 29, 29, 0.7);
+
+
+
+/* Line 1 */
+
+position: absolute;
+width: 80px;
+height: 0px;
+left: 0px;
+top: 2px;
+
+border: 1px solid rgba(29, 29, 29, 0.7);
+transform: rotate(-90deg);
+
+
+/* Frame 39 */
+
+position: absolute;
+width: 514px;
+height: 109px;
+left: 823px;
+top: 387px;
+
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+position: absolute;
+width: 514px;
+height: 75px;
+left: 0px;
+top: 34px;
+
+background: rgba(177, 168, 183, 0.6);
+border: 0.5px solid #FFFFFF;
+box-shadow: 0px 0px 20px rgba(7, 143, 7, 0.5);
+backdrop-filter: blur(35px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+
+/* healthicons:ui-user-profile-outline */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 22.92%;
+bottom: 43.75%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Type your username here... */
+
+width: 219px;
+height: 21px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: rgba(51, 65, 85, 0.5);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Username */
+
+position: absolute;
+width: 92px;
+height: 23px;
+left: 0px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(29, 29, 29, 0.8);
+
+
+
+/* Frame 40 */
+
+position: absolute;
+width: 515px;
+height: 135px;
+left: 823px;
+top: 512px;
+
+
+
+/* Frame 12 */
+
+position: absolute;
+width: 515px;
+height: 109px;
+left: 0px;
+top: 0px;
+
+
+
+/* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10px 20px;
+gap: 10px;
+
+position: absolute;
+width: 514px;
+height: 75px;
+left: 1px;
+top: 34px;
+
+background: rgba(177, 168, 183, 0.6);
+border: 0.5px solid #FFFFFF;
+box-shadow: 0px 0px 20px rgba(7, 143, 7, 0.5);
+backdrop-filter: blur(35px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+
+/* Group 1 */
+
+width: 474px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Type your password here... */
+
+position: absolute;
+width: 226.42px;
+height: 21px;
+left: 45.39px;
+top: 25.5px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: rgba(51, 65, 85, 0.5);
+
+
+
+/* formkit:password */
+
+position: absolute;
+width: 16.46px;
+height: 16.46px;
+left: 20px;
+top: 28.27px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 6.25%;
+top: 31.25%;
+bottom: 0%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 21.62%;
+right: 21.63%;
+top: 0%;
+bottom: 62.5%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 68.75%;
+right: 18.75%;
+top: 59.37%;
+bottom: 28.13%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 43.75%;
+right: 43.75%;
+top: 59.37%;
+bottom: 28.13%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 18.75%;
+right: 68.75%;
+top: 59.37%;
+bottom: 28.13%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* clarity:eye-show-line */
+
+position: absolute;
+width: 21.6px;
+height: 21.6px;
+left: 472.4px;
+top: 27.9px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.78%;
+right: 5.89%;
+top: 20.92%;
+bottom: 20.89%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 31.33%;
+right: 30.55%;
+top: 31.03%;
+bottom: 30.86%;
+
+background: rgba(51, 65, 85, 0.5);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Password */
+
+position: absolute;
+width: 89px;
+height: 23px;
+left: 1px;
+top: -1px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(29, 29, 29, 0.8);
+
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 258px;
+height: 19px;
+left: 0px;
+top: 116px;
+
+
+
+/* icon-park-outline:caution */
+
+width: 18px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 10.42%;
+bottom: 10.42%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 10.42%;
+bottom: 10.42%;
+
+border: 1.5px solid rgba(204, 0, 0, 0.6);
+
+
+/* Vector */
+
+position: absolute;
+left: 50%;
+right: 49.98%;
+top: 39.58%;
+bottom: 25%;
+
+border: 1px solid rgba(204, 0, 0, 0.6);
+
+
+/* Passwords are CASE SENSITIVE */
+
+width: 230px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: rgba(204, 0, 0, 0.6);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Sign In */
+
+position: absolute;
+width: 100px;
+height: 38px;
+left: 823px;
+top: 262px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(30, 27, 75, 0.8);
+
+
+
+/* Access your academic portal */
+
+position: absolute;
+width: 364px;
+height: 33px;
+left: 823px;
+top: 324px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(100, 116, 139, 0.8);
+
+
+
+/* Frame 41 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px 165px;
+gap: 10px;
+
+position: absolute;
+width: 514px;
+height: 78px;
+left: 823px;
+top: 671px;
+
+background: #8600AA;
+box-shadow: 0px 6px 10px rgba(7, 143, 7, 0.5), inset 0px 4px 4px #02A75A;
+backdrop-filter: blur(20px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 12px;
+
+
+/* Login */
+
+width: 80px;
+height: 38px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F5F5F5;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 42 */
+
+position: absolute;
+width: 514px;
+height: 32px;
+left: 823px;
+top: 773px;
+
+
+
+/* Group 4 */
+
+position: absolute;
+width: 514px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+
+
+/* Forgot password? */
+
+position: absolute;
+width: 144px;
+height: 32px;
+left: 370px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+text-decoration-line: underline;
+
+color: #0284C7;
+
+
+
+/* Group 2 */
+
+position: absolute;
+width: 142px;
+height: 21px;
+left: 0px;
+top: 6px;
+
+
+
+/* Remember me */
+
+position: absolute;
+width: 118px;
+height: 21px;
+left: 24px;
+top: 6px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: rgba(29, 29, 29, 0.8);
+
+
+
+/* Rectangle 68 */
+
+position: absolute;
+width: 16px;
+height: 16px;
+left: 0px;
+top: 8px;
+
+background: #D9D9D9;
+border: 0.3px solid rgba(61, 61, 61, 0.7);
+border-radius: 4px;
+
+
+/* Frame 43 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 8px 5px;
+gap: 10px;
+
+position: absolute;
+width: 300px;
+height: 32px;
+left: 930px;
+top: 978px;
+
+
+
+/* Frame 30 */
+
+width: 290px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 13 */
+
+position: absolute;
+width: 290px;
+height: 16px;
+left: 0px;
+top: 0px;
+
+
+
+/* 2026 Covenant University. All rights reserved. */
+
+position: absolute;
+width: 272px;
+height: 16px;
+left: 18px;
+top: 0px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: rgba(29, 29, 29, 0.7);
+
+
+
+/* Group 4 */
+
+position: absolute;
+width: 11px;
+height: 11px;
+left: 0px;
+top: 3px;
+
+
+
+/* si:copyright-line */
+
+position: absolute;
+width: 11px;
+height: 11px;
+left: 0px;
+top: 3px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.34%;
+right: 8.33%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 0.6px solid rgba(29, 29, 29, 0.6);
+
+
+/* Trouble signing in? Contact IT Support */
+
+position: absolute;
+width: 307px;
+height: 32px;
+left: 927px;
+top: 829px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+display: flex;
+align-items: center;
+
+color: rgba(29, 29, 29, 0.8);
+
+
+
+/* Frame 44 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: calc(50% - 1024px/2);
+
+
+
+/* Group 19 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+
+
+/* Group 18 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+
+
+/* Group 17 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+
+
+/* Rectangle 77 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: url(Senate Building Covenant University.jpg);
+
+
+/* Rectangle 79 */
+
+position: absolute;
+width: 720px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(180deg, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%);
+
+
+/* Ellipse 6 */
+
+position: absolute;
+width: 252px;
+height: 264px;
+left: 234px;
+top: 406px;
+
+background: url(CU_Monogram-removebg-preview.png);
+
+
+/* Frame 19 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 9px;
+
+position: absolute;
+width: 385px;
+height: 80px;
+left: 59px;
+top: 888px;
+
+
+
+/* CU Portal | Welcome back. */
+
+width: 385px;
+height: 38px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Log in to access your world... */
+
+width: 385px;
+height: 33px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 33px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

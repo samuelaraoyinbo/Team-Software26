@@ -1,0 +1,513 @@
+/* =========================================================
+   CSS CUSTOM PROPERTIES / THEME
+========================================================= */
+:root {
+  --color-purple: #8B0FA0;
+  --color-purple-hover: #7A0D8E;
+  --color-purple-active: #6B0B7C;
+
+  --color-green: #3FAE4A;
+  --color-green-glow: rgba(63, 174, 74, 0.35);
+
+  --color-navy: #2E2A3D;
+  --color-gray-secondary: #6B7280;
+  --color-gray-label: #374151;
+  --color-warning: #E85D4B;
+  --color-link: #2563EB;
+
+  --color-input-bg: #e8e8ea;
+  --color-input-bg-focus: #e2e2e5;
+
+  --radius-sm: 8px;
+  --radius-full: 50%;
+
+  --font-base: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* =========================================================
+   RESET / BASE
+========================================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-base);
+  color: var(--color-navy);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+}
+
+/* =========================================================
+   LAYOUT: two-column split
+========================================================= */
+.login-screen {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* =========================================================
+   LEFT PANEL (image)
+========================================================= */
+.image-panel {
+  position: relative;
+  flex: 1 1 50%;
+  width: 50%;
+  height: 100%;
+  /* Gradient + photo painted as one blended layer, so the image shows
+     through the tint instead of sitting under a flat separate overlay */
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(20, 20, 25, 0.75) 0%,
+      rgba(20, 20, 25, 0.35) 45%,
+      rgba(139, 15, 160, 0.25) 100%
+    ),
+    url('img/cu.jpeg');
+  background-blend-mode: multiply, normal;
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #3a3a3a; /* fallback if image fails to load */
+  overflow: hidden;
+}
+
+/* Extra soft vignette so the watermark/caption stay readable while the
+   photo remains visible (blended) behind them */
+.image-panel__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(20, 20, 25, 0.35) 0%,
+    rgba(20, 20, 25, 0.05) 45%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  mix-blend-mode: multiply;
+}
+
+.image-panel__watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.watermark-text {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 92px;
+  font-weight: 700;
+  fill: #ffffff;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.45));
+}
+
+.image-panel__caption {
+  position: absolute;
+  left: 48px;
+  right: 48px;
+  bottom: 48px;
+  color: #ffffff;
+}
+
+.caption-line {
+  font-size: 22px;
+  line-height: 1.4;
+  font-weight: 400;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.caption-strong {
+  font-weight: 700;
+}
+
+/* =========================================================
+   RIGHT PANEL (form)
+========================================================= */
+.form-panel {
+  flex: 1 1 50%;
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 32px 12px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.form-wrap {
+  width: 100%;
+  max-width: 440px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Brand row */
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.brand-badge {
+  flex-shrink: 0;
+  border-radius: var(--radius-full);
+}
+
+.badge-text {
+  font-size: 15px;
+  font-weight: 700;
+  fill: var(--color-green);
+  text-anchor: middle;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 44px;
+  background: #d1d5db;
+  flex-shrink: 0;
+}
+
+.brand-wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand-line {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-navy);
+}
+
+.brand-tagline {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-gray-secondary);
+  margin-top: 2px;
+}
+
+/* Headings */
+.form-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 6px;
+}
+
+.form-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-secondary);
+  margin-bottom: 28px;
+}
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+.field {
+  margin-bottom: 18px;
+}
+
+.field-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-gray-label);
+  margin-bottom: 8px;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--color-gray-secondary);
+  pointer-events: none;
+}
+
+.input-field {
+  width: 100%;
+  min-height: 48px;
+  background: var(--color-input-bg);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 12px 44px 12px 44px;
+  font-size: 15px;
+  color: var(--color-navy);
+  font-family: inherit;
+  transition: box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.input-field::placeholder {
+  color: #9CA0A8;
+}
+
+.input-field:focus {
+  outline: none;
+  background: var(--color-input-bg-focus);
+  border-color: var(--color-green);
+  box-shadow: 0 0 0 4px var(--color-green-glow);
+}
+
+.input-field.input-field--error {
+  border-color: var(--color-warning);
+  box-shadow: 0 0 0 3px rgba(232, 93, 75, 0.2);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-secondary);
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.toggle-password:hover {
+  color: var(--color-navy);
+}
+
+.toggle-password:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.error-message {
+  font-size: 13px;
+  color: var(--color-warning);
+  margin-top: 6px;
+  min-height: 16px;
+}
+
+.warning-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--color-warning);
+  margin-top: 8px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+.login-btn {
+  width: 100%;
+  min-height: 52px;
+  background: var(--color-purple);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  margin-top: 8px;
+  transition: background 0.2s ease, opacity 0.2s ease;
+}
+
+.login-btn:hover {
+  background: var(--color-purple-hover);
+}
+
+.login-btn:active {
+  background: var(--color-purple-active);
+}
+
+.login-btn:focus-visible {
+  outline: 3px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   UTILITY ROW / SUPPORT ROW
+========================================================= */
+.utility-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--color-gray-label);
+  cursor: pointer;
+}
+
+.remember-me input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.checkbox-box {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #9CA0A8;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  background: #ffffff;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.remember-me input[type="checkbox"]:checked + .checkbox-box {
+  background: var(--color-purple);
+  border-color: var(--color-purple);
+}
+
+.remember-me input[type="checkbox"]:checked + .checkbox-box::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.remember-me input[type="checkbox"]:focus-visible + .checkbox-box {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.link {
+  color: var(--color-link);
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.link:hover {
+  color: #1d4ed8;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
+}
+
+.support-row {
+  text-align: center;
+  font-size: 14px;
+  color: var(--color-gray-secondary);
+  margin-top: 22px;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.form-footer {
+  width: 100%;
+  max-width: 440px;
+  margin-top: auto;
+  padding-top: 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.form-footer p {
+  font-size: 12px;
+  color: #9CA0A8;
+}
+
+/* =========================================================
+   RESPONSIVE (< 900px)
+========================================================= */
+@media (max-width: 900px) {
+  html, body {
+    overflow-y: auto;
+  }
+
+  .login-screen {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .image-panel {
+    width: 100%;
+    height: 180px;
+    flex: none;
+  }
+
+  .image-panel__watermark svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .watermark-text {
+    font-size: 48px;
+  }
+
+  .image-panel__caption {
+    left: 20px;
+    right: 20px;
+    bottom: 16px;
+  }
+
+  .caption-line {
+    font-size: 14px;
+  }
+
+  .form-panel {
+    width: 100%;
+    height: auto;
+    flex: none;
+    padding: 32px 24px 24px;
+    overflow-y: visible;
+  }
+
+  .form-wrap {
+    flex: none;
+  }
+
+  .input-field,
+  .login-btn {
+    min-height: 44px;
+  }
+
+  .form-footer {
+    margin-top: 24px;
+  }
+}
